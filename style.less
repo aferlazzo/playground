@@ -1,0 +1,66 @@
+	div {
+		margin:0;
+		padding:0;
+	}
+	.blue {
+		background-color: #00f;
+		color: #fff;
+	}
+	.red {
+		background-color: #f00;
+		color: #000;
+	}
+	.breadcrumbContainer {
+		width: 400px;
+		margin: 0 auto;
+		height: 70px;
+	}
+	.breadcrumbs {
+		position: relative;
+		div {
+			float: left;
+			width: 50px;
+		}
+		hr {
+			border-width: 0;
+			-webkit-margin-after: 0;
+			-webkit-margin-before: 0;
+			background-color: #000;
+			height: 2px;
+			margin: 25px 0 0 4px;
+		}
+		.step {
+			border-radius: 50%;
+			border: 2px solid #000;
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			font-size: 24px;
+			-webkit-transition: 1s ease-in-out;
+			-moz-transition: 1s ease-in-out;
+			transition: 1s ease-in-out
+		}
+		.active {
+			position: absolute;
+			background-color: hsla(120,100%,50%,0.3); //green with opacity
+		}
+		.step0 {
+			-webkit-transform: translate(0, 0);
+			-moz-transform: translate(0, 0);
+			-ms-transform: translate(0, 0);
+			transform: translate(0, 0);
+		}
+		.step1 {
+			-webkit-transform: translate(100px, 0);
+			-moz-transform: translate(100px, 0);
+			-ms-transform: translate(100px, 0);
+			transform: translate(100px, 0);
+		}
+		.step2 {
+			-webkit-transform: translate(200px, 0);
+			-moz-transform: translate(200px, 0);
+			-ms-transform: translate(200px, 0);
+			transform: translate(200px, 0);
+		}
+	}
